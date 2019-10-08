@@ -1,0 +1,196 @@
+head { 
+    margin: auto;
+    color: #556d54;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    margin: auto;
+    padding: 1px;
+    background-color: #616360; 
+    color: #fff; /* White */
+    font-family: 'Lato', sans-serif;
+} 
+
+/* ---- Set Up Site Grid ---- */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "logo banner banner"
+        "nav nav nav"
+        "main main side"
+        "footer footer footer";
+    grid-gap: 4px;
+}
+
+    @media (max-width: 750px){
+    .wrapper {
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto 1fr auto;
+      grid-template-areas:
+        "logo logo logo"
+        "banner banner banner"
+        "nav nav nav"
+        "main main main"
+        "side side side"
+        "footer footer footer";
+    }
+  }
+  
+  @media (max-width: 1000px){
+    .wrapper {
+      /* change the code below this line */
+    
+      grid-template-areas:
+        "logo logo logo"
+        "banner banner banner"
+        "nav nav nav"
+        "main main main"
+        "side side side"
+        "footer footer footer";
+    
+    /* change the code above this line */
+    }
+  }
+
+/* ---- End of Grid Setup ---- */
+
+/* ---- Area Styling ---- */
+
+.box {
+    border: solid 2px #000;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #706F2B;
+}
+
+/* ---- Area colouring ---- */
+
+.logo {
+    background-color: #FF9436; /* Light Orange */
+}
+
+.footer {
+    background-color: #FF9436; /* Light Orange */
+}
+.banner {
+    background-color: #83A882; /* Dull Green */
+}
+
+.main {
+    background-color: #556d54; /* Army Green */
+}
+
+.side {
+    background-color: #CFF2D6; /* Pastal Cyan */
+}
+
+.nav {
+    background-color: #706F2B; /* Deep Green */
+}
+
+/* ---- Area Specifics ---- */
+.logo {
+    grid-area: logo;
+    text-align: center;
+}
+
+.banner {
+    grid-area: banner;
+    font-size: 200%;
+    text-align: center;
+}
+
+.nav {
+    grid-area: nav;
+    background-color: #BB5521; /* Deep Orange */
+    font-size: 150%;
+    text-align: center;
+}
+
+.main {
+    grid-area: main;
+    font-size: 100%;
+}
+
+.side {
+    grid-area: side;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: right;
+}
+
+/* ---- End of Area Styling ---- */
+
+/* Changing Colour of Font */
+
+.side {
+    color: #35260d /* Deep Brown */
+}
+
+/* End of Colour Change */
+
+/* Headers */
+
+h1, h2, h3, h4 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navigation Links */
+.nav a {font-weight: bold; text-decoration: none;}
+.nav a:link, .nav a:visited {color: #fff;}
+.nav a:hover {color: #35260d; text-decoration: none;}
+
+
+/* Profile Photo */
+.profilephoto {
+    max-width: 70%;
+    height: auto;
+    border-radius: 100%;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.8);
+}
+.text_alignment {
+    text-align: center;
+}
+
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #f44336; /* RED */
+  color: white;
+  margin-bottom: 15px;
+ height: 30px;
+  border: solid 2px #fff;
+    text-align: center;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
+}
+
+.alert a {font-weight: bold; text-decoration: none;}
+.alert a:link, .alert a:visited {color: #fff;}
+.alert a:hover {color: #35260d; text-decoration: none;}
+
+
+.contact {
+    width: 100%;
+}
